@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore the TasteHub gallery — food, interiors, atmosphere and unforgettable dining moments."
+    >
+
+    <meta
+        name="theme-color"
+        content="#171717"
+    >
+
+    <title>Gallery | TasteHub</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/gallery.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container navbar">
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="TasteHub Home"
+            >
+                TasteHub
+            </a>
+
+
+            <!-- Desktop / Mobile Navigation -->
+
+            <nav
+                class="nav-menu"
+                aria-label="Main navigation"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="our-story.html">
+                    Our Story
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a
+                    href="gallery.html"
+                    class="active"
+                >
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a
+                    href="contact.html#reserve"
+                    class="nav-reserve"
+                >
+                    Reserve a Table
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Menu -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         GALLERY HERO
+    ====================================================== -->
+
+    <main>
+
+        <section class="gallery-hero">
+
+            <div class="gallery-hero-overlay"></div>
+
+
+            <div class="container gallery-hero-content">
+
+                <p class="eyebrow">
+                    A glimpse inside TasteHub
+                </p>
+
+                <h1>
+                    The Gallery
+                </h1>
+
+                <p class="gallery-hero-text">
+                    Discover the dishes, spaces and moments
+                    that make every visit to TasteHub memorable.
+                </p>
+
+
+                <div class="gallery-hero-meta">
+
+                    <span>
+                        Food
+                    </span>
+
+                    <span>·</span>
+
+                    <span>
+                        Atmosphere
+                    </span>
+
+                    <span>·</span>
+
+                    <span>
+                        Experience
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-scroll">
+                Scroll to explore
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             GALLERY INTRO
+        ================================================== -->
+
+        <section class="gallery-intro section">
+
+            <div class="container intro-grid">
+
+                <div class="intro-heading">
+
+                    <p class="eyebrow">
+                        Moments at TasteHub
+                    </p>
+
+                    <h2>
+                        More than a meal.
+                        <br>
+                        It's a feeling.
+                    </h2>
+
+                </div>
+
+
+                <div class="intro-text">
+
+                    <p>
+                        From the first plate arriving at your table
+                        to the final conversation of the evening,
+                        TasteHub is designed around moments worth
+                        remembering.
+                    </p>
+
+                    <p>
+                        Explore our food, our interiors and the
+                        atmosphere that brings everything together.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FILTER BAR
+        ================================================== -->
+
+        <section class="gallery-main">
+
+            <div class="container">
+
+
+                <div class="gallery-toolbar">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Visual Journal
+                        </p>
+
+                        <h2>
+                            Explore TasteHub
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        class="gallery-filters"
+                        role="tablist"
+                        aria-label="Gallery categories"
+                    >
+
+                        <button
+                            class="filter-btn active"
+                            type="button"
+                            data-filter="all"
+                            role="tab"
+                            aria-selected="true"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            type="button"
+                            data-filter="food"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            Food
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            type="button"
+                            data-filter="interior"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            Interior
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            type="button"
+                            data-filter="experience"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            Experience
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     GALLERY GRID
+                ================================================== -->
+
+                <div
+                    class="luxury-gallery"
+                    id="galleryGrid"
+                >
+
+
+                    <!-- IMAGE 1 -->
+
+                    <figure
+                        class="gallery-card gallery-large"
+                        data-category="food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=90"
+                            alt="Freshly prepared restaurant dish"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Food</span>
+
+                            <strong>
+                                Crafted with intention
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 2 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="interior"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=90"
+                            alt="Elegant restaurant interior"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Interior</span>
+
+                            <strong>
+                                A place to slow down
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 3 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1100&q=90"
+                            alt="Colorful fresh restaurant meal"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Food</span>
+
+                            <strong>
+                                Fresh from the kitchen
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 4 -->
+
+                    <figure
+                        class="gallery-card gallery-tall"
+                        data-category="experience"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1100&q=90"
+                            alt="Warm restaurant dining atmosphere"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Experience</span>
+
+                            <strong>
+                                Evenings worth remembering
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 5 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1100&q=90"
+                            alt="Elegant pasta dish"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Food</span>
+
+                            <strong>
+                                Simple. Beautiful. Delicious.
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 6 -->
+
+                    <figure
+                        class="gallery-card gallery-wide"
+                        data-category="interior"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1500&q=90"
+                            alt="TasteHub inspired restaurant interior"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Interior</span>
+
+                            <strong>
+                                Designed for conversation
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 7 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="experience"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511084901822-0c7c3d9d0d8b?auto=format&fit=crop&w=1100&q=90"
+                            alt="Friends enjoying dinner together"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Experience</span>
+
+                            <strong>
+                                Gather around the table
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 8 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1100&q=90"
+                            alt="Beautiful plated dessert"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Food</span>
+
+                            <strong>
+                                Save room for dessert
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 9 -->
+
+                    <figure
+                        class="gallery-card gallery-large"
+                        data-category="experience"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=90"
+                            alt="Friends sharing a restaurant experience"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Experience</span>
+
+                            <strong>
+                                Good food. Good company.
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 10 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="interior"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1100&q=90"
+                            alt="Restaurant bar and interior"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Interior</span>
+
+                            <strong>
+                                Warm after dark
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 11 -->
+
+                    <figure
+                        class="gallery-card"
+                        data-category="food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1100&q=90"
+                            alt="Fresh pasta prepared at TasteHub"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Food</span>
+
+                            <strong>
+                                Made with care
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <!-- IMAGE 12 -->
+
+                    <figure
+                        class="gallery-card gallery-wide"
+                        data-category="experience"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1500&q=90"
+                            alt="Fine dining table setting"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+
+                            <span>Experience</span>
+
+                            <strong>
+                                Your table awaits
+                            </strong>
+
+                        </figcaption>
+
+                    </figure>
+
+
+                </div>
+
+
+                <!-- Empty state -->
+
+                <div
+                    class="gallery-empty"
+                    id="galleryEmpty"
+                >
+
+                    <span>✦</span>
+
+                    <h3>
+                        Nothing here yet.
+                    </h3>
+
+                    <p>
+                        We're preparing more moments for you.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE CTA
+        ================================================== -->
+
+        <section class="gallery-cta section">
+
+            <div class="gallery-cta-overlay"></div>
+
+
+            <div class="container gallery-cta-content">
+
+                <p class="eyebrow">
+                    Experience it yourself
+                </p>
+
+                <h2>
+                    Some moments
+                    <br>
+                    are better in person.
+                </h2>
+
+                <p>
+                    Come for the food.
+                    Stay for the atmosphere.
+                    Leave with a memory.
+                </p>
+
+
+                <div class="cta-buttons">
+
+                    <a
+                        href="index.html#reservation"
+                        class="btn btn-primary"
+                    >
+                        Reserve a Table
+                    </a>
+
+                    <a
+                        href="index.html"
+                        class="btn btn-outline"
+                    >
+                        Back to TasteHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                >
+                    TasteHub
+                </a>
+
+                <p>
+                    Modern food, warm hospitality and a place
+                    worth coming back to.
+                </p>
+
+            </div>
+
+
+
+            <!-- Explore -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="our-story.html">
+                    Our Story
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- Visit -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Visit
+                </h4>
+
+                <p>
+                    123 Main Street
+                    <br>
+                    Your City, Country
+                </p>
+
+                <p>
+                    Mon – Thu: 11:00 AM – 10:00 PM
+                    <br>
+                    Fri – Sun: 11:00 AM – 11:00 PM
+                </p>
+
+            </div>
+
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="tel:+1234567890">
+                    +1 234 567 890
+                </a>
+
+                <a href="mailto:hello@tastehub.demo">
+                    hello@tastehub.demo
+                </a>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+                        Facebook
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="TikTok"
+                    >
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer bottom -->
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 TasteHub · Fictional Demo
+            </p>
+
+            <a href="index.html">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         MOBILE ACTION BAR
+    ====================================================== -->
+
+    <div class="mobile-action-bar">
+
+        <a href="index.html">
+            <span>⌂</span>
+            <small>Home</small>
+        </a>
+
+        <a href="menu.html">
+            <span>◈</span>
+            <small>Menu</small>
+        </a>
+
+        <a href="tel:+1234567890">
+            <span>☎</span>
+            <small>Call</small>
+        </a>
+
+        <a href="index.html#reservation">
+            <span>✦</span>
+            <small>Reserve</small>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+
+    <div
+        class="gallery-lightbox"
+        id="galleryLightbox"
+        aria-hidden="true"
+    >
+
+        <div class="lightbox-backdrop"></div>
+
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Close gallery"
+        >
+            ×
+        </button>
+
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            type="button"
+            aria-label="Previous image"
+        >
+            ←
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <div class="lightbox-image-wrapper">
+
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="lightbox-info">
+
+                <span id="lightboxCategory">
+                    Food
+                </span>
+
+                <h3 id="lightboxTitle">
+                    Crafted with intention
+                </h3>
+
+                <p id="lightboxCounter">
+                    01 / 12
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            type="button"
+            aria-label="Next image"
+        >
+            →
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/gallery.js"></script>
+
+</body>
+
+</html>
