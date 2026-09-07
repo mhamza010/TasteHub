@@ -417,7 +417,7 @@ h3 {
 .hero h1 {
     color: var(--white);
 
-    font-size: clamp(4rem, 9vw, 7.5rem);
+    font-size: clamp(85px , 9vw, 84px);
 
     letter-spacing: -0.04em;
 
